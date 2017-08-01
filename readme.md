@@ -33,16 +33,18 @@ Does that mean rewriting this to `WinMain` routine (meaning C++?) and building w
 
 ## Building 
 
-App was built using [CL (Compiler Command-Line Syntax)](https://msdn.microsoft.com/en-us/library/610ecb4h.aspx) through [Developer Command Prompt](https://docs.microsoft.com/en-us/dotnet/framework/tools/developer-command-prompt-for-vs) on a MSW10 machine that has *Visual Studio Community 2017* on it.
+App was built using [CL (Compiler Command-Line Syntax)](https://docs.microsoft.com/cpp/build/reference/compiler-command-line-syntax) through [Developer Command Prompt](https://docs.microsoft.com/dotnet/framework/tools/developer-command-prompt-for-vs) on a MSW10 machine that has *Visual Studio Community 2017* on it.
+
+Directory `testfiles` have `.webloc` files as created by different browsers on macOS in it.
 
 ### Production
 
 Open Developer Command Prompt
 
-Create directory `Z:\Path\To\WindowsWeblocOpener\build\prod` as `cl` does not like to put products under non existing dirs.
+Create directory `X:\Path\To\Source\Of\WindowsWeblocOpener\build\prod` as `cl` does not like to put products under non existing dirs.
 
 ```
-cd X:\Path\To\WindowsWeblocOpener\src
+cd X:\Path\To\Source\Of\WindowsWeblocOpener\src
 cl main.c /Fe..\build\prod\WindowsWeblocOpener /DDEBUG=0
 ```
 
@@ -51,7 +53,7 @@ cl main.c /Fe..\build\prod\WindowsWeblocOpener /DDEBUG=0
 Open Developer Command Prompt
 
 ```
-cd X:\Path\To\WindowsWeblocOpener\src
+cd X:\Path\To\Source\Of\WindowsWeblocOpener\src
 cl main.c /FeWindowsWeblocOpener
-WindowsWeblocOpener.exe Z:\Path\To\WindowsWeblocOpener\testfiles\safari.webloc
+WindowsWeblocOpener.exe X:\Path\To\Source\Of\WindowsWeblocOpener\testfiles\safari.webloc
 ```
