@@ -8,7 +8,7 @@ Simple middleware app that parses `.webloc` file (macOS URL shortcut file) and p
 
 * Go to this repo releases tab or follow [this link](https://github.com/WARP-LAB/WindowsWeblocOpener/releases/latest) to download latest `WindowsWeblocOpener-<version>.zip`.
 * Unzip the release.
-* Copy `WindowsWeblocOpener` directory containing `WindowsWeblocOpener.exe` somewhere, say `C:\Program Files (x86)\WindowsWeblocOpener\WindowsWeblocOpener.exe`  .
+* Copy `WindowsWeblocOpener` directory containing `WindowsWeblocOpener.exe` somewhere, say `C:\Program Files\WindowsWeblocOpener\WindowsWeblocOpener.exe`  .
 * Right click `.webloc` file and choose *Open With / Choose another app*.
 * In the opened dialog window check *Always use this app to open .webloc files*.
 * In the app selection list click *More apps* and scroll down for *Look for another app on this PC*.
